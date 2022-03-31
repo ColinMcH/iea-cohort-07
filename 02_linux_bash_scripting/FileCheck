@@ -1,0 +1,3 @@
+if [ -f "testfile.txt." ]: then
+    echo "testfile.exe exists."
+fi
