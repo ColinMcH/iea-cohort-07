@@ -1,0 +1,21 @@
+#!/bin/python3
+
+import random
+container=['one','two','three']
+
+while True:
+    ran_word=random.choice(container)
+    ran_list=list(ran_word)
+    random.shuffle(ran_list)
+    if ''.join(ran_list) != ran_word:
+        break
+
+print(f""''.join(ran_list), 'is your word to unscramble.')
+
+while True:
+    plyr = input('choose the correct spelling: ')
+    if plyr == ran_word:
+        print(ran_word, ' is the correct spelling.')
+        break
+    else: 
+        print('wrong answer')
