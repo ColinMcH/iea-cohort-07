@@ -8,9 +8,9 @@ value_list=0
 print(type(value_list))
 for i in user_list:
     if i in numerals_dict:
-        #print(i)
         rom_value=numerals_dict[i]
-        print(rom_value)
         value_list += rom_value
 
 print(f"The Roman Numeral value is {value_list}")
+
+
